@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgorund1"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Добро пожаловать, логин"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#474747"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                app:srcCompat="@drawable/price" />
+
+            <Button
+                android:id="@+id/button_price"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_back"
+                android:fontFamily="@font/roboto_slab"
+                android:onClick="pricelist"
+                android:text="П р а й с - л и с т "
+                android:textAllCaps="true"
+                android:textColor="#CDCDCD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                app:srcCompat="@drawable/doctor" />
+
+            <Button
+                android:id="@+id/button_order"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_back"
+                android:fontFamily="@font/roboto_slab"
+                android:onClick="order"
+                android:text="З а п и с а т ь с я"
+                android:textAllCaps="true"
+                android:textColor="#CDCDCD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                app:srcCompat="@drawable/timetable" />
+
+            <Button
+                android:id="@+id/button_timetable"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_back"
+                android:fontFamily="@font/roboto_slab"
+                android:onClick="timetable"
+                android:text="Р а с п и с а н и е"
+                android:textAllCaps="true"
+                android:textColor="#CDCDCD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                app:srcCompat="@drawable/waiting" />
+
+            <Button
+                android:id="@+id/button_price3"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_back"
+                android:fontFamily="@font/roboto_slab"
+                android:onClick="appointment"
+                android:text="М о и  з а п и с и"
+                android:textAllCaps="true"
+                android:textColor="#CDCDCD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

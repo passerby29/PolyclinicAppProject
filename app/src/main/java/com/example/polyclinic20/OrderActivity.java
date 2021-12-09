@@ -52,7 +52,7 @@ public class OrderActivity extends AppCompatActivity {
         user_name = intent.getStringExtra("user_name");
         user_id = intent.getStringExtra("user_id");
 
-        dc_list = (ListView) findViewById(R.id.doctor_choose_list);
+        dc_list = (ListView) findViewById(R.id.workers_list);
         sc_list = (ListView) findViewById(R.id.service_choose_list);
         choices = (TextView) findViewById(R.id.textView_choices);
         return_btn = (Button) findViewById(R.id.button_return);

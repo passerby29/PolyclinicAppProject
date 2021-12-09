@@ -50,4 +50,10 @@ public class MenuActivity extends AppCompatActivity {
         intent.putExtra("user_name", user_name);
         startActivity(intent);
     }
+    public void workers(View view){
+        Intent intent = new Intent(getApplicationContext(), WorkersActivity.class);
+        intent.putExtra("user_id", user_id);
+        intent.putExtra("user_name", user_name);
+        startActivity(intent);
+    }
 }

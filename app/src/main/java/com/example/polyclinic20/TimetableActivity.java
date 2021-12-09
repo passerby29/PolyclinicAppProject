@@ -25,7 +25,7 @@ public class TimetableActivity extends AppCompatActivity {
         user_name = intent.getStringExtra("user_name");
         user_id = intent.getStringExtra("user_id");
 
-        Adapter adapter = new Adapter(getApplicationContext(), R.layout.timetable_layout, timetable);
+        Adapter_Timetable adapter = new Adapter_Timetable(getApplicationContext(), R.layout.timetable_layout, timetable);
         timetable_list.setAdapter(adapter);
     }
 

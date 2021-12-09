@@ -17,7 +17,7 @@ public class AppointmentActivity extends AppCompatActivity {
     String user_name, user_id;
     ListView appointments;
     ArrayList<Timetable> appointment = new ArrayList<>();
-    Adapter adapter;
+    Adapter_Timetable adapter;
     DatabaseHelper sqlHelper;
     SQLiteDatabase db;
     Cursor appointmentCursor;
@@ -90,7 +90,8 @@ public class AppointmentActivity extends AppCompatActivity {
             appointment.add(new Timetable(service_names[i], doctor_names[i], prices[i], times[i]));
         }
 
-        adapter = new Adapter(this, R.layout.appointment_list, appointment);
+        adapter = new Adapter_Timetable
+                (this, R.layout.appointment_list, appointment);
         appointments.setAdapter(adapter);
     }
 

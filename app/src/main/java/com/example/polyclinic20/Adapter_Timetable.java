@@ -10,12 +10,12 @@ import android.widget.TextView;
 import java.util.List;
 
 
-public class Adapter extends ArrayAdapter<Timetable> {
+public class Adapter_Timetable extends ArrayAdapter<Timetable> {
     private LayoutInflater inflater;
     private int layout;
     private List<Timetable> timetable;
 
-    public Adapter(Context context, int resource, List<Timetable> timetable) {
+    public Adapter_Timetable(Context context, int resource, List<Timetable> timetable) {
         super(context, resource, timetable);
         this.timetable = timetable;
         this.layout = resource;

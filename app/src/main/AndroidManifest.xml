@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".WorkersActivity">
+        <intent-filter>
+            <action android:name=".WorkersActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
         <activity android:name=".AppointmentActivity">
             <intent-filter>
                 <action android:name=".AppointmentActivity" />
